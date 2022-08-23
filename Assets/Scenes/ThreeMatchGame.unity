@@ -463,6 +463,11 @@ MonoBehaviour:
   - {fileID: 744001961}
   - {fileID: 405846888}
   - {fileID: 296948513}
+  images:
+  - {fileID: 21300000, guid: f12f5a8356ce80b439d8a6ea5b41efcd, type: 3}
+  - {fileID: 21300000, guid: f2475b867d92200488d50e02312e3cae, type: 3}
+  - {fileID: 21300000, guid: 398ee0f95475148448c2931e923daa83, type: 3}
+  - {fileID: 21300000, guid: 5db165493ae2bda4ba0ed395dc464648, type: 3}
   delayTime: 1
 --- !u!4 &411296791
 Transform:
