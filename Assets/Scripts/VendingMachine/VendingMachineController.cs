@@ -62,21 +62,21 @@ public class VendingMachineController : MonoBehaviour
                 displayNum.text = "";
             }
 
-            if(displayNum.text.Length < 2)
-            {
-                CheckNumber(item, "0");
-                CheckNumber(item, "1");
-                CheckNumber(item, "2");
-                CheckNumber(item, "3");
-                CheckNumber(item, "4");
-                CheckNumber(item, "5");
-                CheckNumber(item, "6");
-                CheckNumber(item, "7");
-                CheckNumber(item, "8");
-                CheckNumber(item, "9");
-            }
-            CheckNumber(item, "*");
-            CheckNumber(item, "C");
+            
+                CheckNumber(item, item.name[item.name.Length - 1].ToString());
+                //CheckNumber(item, "0");
+                //CheckNumber(item, "1");
+                //CheckNumber(item, "2");
+                //CheckNumber(item, "3");
+                //CheckNumber(item, "4");
+                //CheckNumber(item, "5");
+                //CheckNumber(item, "6");
+                //CheckNumber(item, "7");
+                //CheckNumber(item, "8");
+                //CheckNumber(item, "9");
+            
+            //CheckNumber(item, "*");
+            //CheckNumber(item, "C");
         }
         
         if(item.CompareTag("Hatch"))
@@ -113,12 +113,12 @@ public class VendingMachineController : MonoBehaviour
             }
             else
             {
-                displayNum.text += number;
+                if (displayNum.text.Length < 2)
+                {
+                    displayNum.text += number;
+                }
             }
         }
-
-
-        
     }
 
     void DispenseItems(int number)
